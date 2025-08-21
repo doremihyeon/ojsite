@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     'users',
     'accounts',
     'blog',
+    'contests',
+    'assignments',
 ]
 
 MIDDLEWARE = [
