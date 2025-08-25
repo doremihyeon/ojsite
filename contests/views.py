@@ -1,6 +1,8 @@
+from django.http import HttpResponse
 from django.shortcuts import render
-from .models import Contest
 
 def contest_list(request):
-    contests = Contest.objects.all()
-    return render(request, 'contests/contest_list.html', {'contests': contests})
+    return HttpResponse("대회 목록 페이지입니다.")
+
+def contest_detail(request, pk):
+    return HttpResponse(f"대회 상세 페이지입니다. (id={pk})")
