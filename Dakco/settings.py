@@ -83,7 +83,7 @@ WSGI_APPLICATION = 'Dakco.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'ojdb',
+        'NAME': 'postgres',
         'USER': 'ojuser',
         'PASSWORD': '04617',  # CREATE USER PASSWORD
         'HOST': 'localhost',
