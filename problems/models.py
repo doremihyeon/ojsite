@@ -6,7 +6,7 @@ class Problem(models.Model):
     description = models.TextField()
     difficulty = models.CharField(
         max_length=20,
-        choices=[("easy", "하"), ("medium", "중"), ("hard", "상")],
+        choices=[("easy", "쉬움"), ("medium", "보통"), ("hard", "어려움")],
         default="medium"
     )
     created_at = models.DateTimeField(auto_now_add=True)
